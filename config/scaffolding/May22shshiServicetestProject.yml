@@ -28,18 +28,6 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: project.may22shshiservicetest.integrations:publickFlowService
-  packages:
-  - name: May22shshiServicetestProject
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
-- serviceName: pub.date:getCurrentDate
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2059
 configurationVariables:
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.serverName
   : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
