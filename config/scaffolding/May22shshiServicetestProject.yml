@@ -12,7 +12,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetCustDiscount
+- serviceName: project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_2
   packages:
   - name: May22shshiServicetestProject
     version: "1.0"
@@ -44,50 +44,104 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:GetCustDiscount
+  packages:
+  - name: May22shshiServicetestProject
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.serverName
-  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.dbType
   : ORACLE
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.driverType
+  : Progress® DataDirect®
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
+  : sdd
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.keyStore
+  : ""
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.password
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.datasourceClass
+  : com.wm.dd.jdbcx.oracle.OracleDataSource
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.serverName
+  : dddd
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.trustStore
+  : ""
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
+  : ORACLE
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
+  : "false"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.otherProperties
+  : driverType=thin;
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.portNumber
+  : "1521"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.serverName
+  : adapter-oracle-121-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.trustStore
+  : ""
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.databaseName
   : ORCL
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.startupRetryCount
   : "0"
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.keyStore
-  : ""
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.datasourceClass
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.oracle.OracleDataSource
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.minimumPoolSize
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionEnabled
   : "true"
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.portNumber
-  : "1521"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.databaseName
+  : ""
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.driverType
   : Progress® DataDirect®
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.startupBackoffSecs
   : "10"
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.trustStore
-  : ""
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.networkProtocol
-  : tcp
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.poolIncrementSize
-  : "1"
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.password
-  : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
-  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.otherProperties
-  : driverType=thin;
+  : "{AES}aLZqGGNedYRdf0xY47LtDQ=="
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2_with_autoCommit.connectionSettings.user
   : JDBC_BVT
+  ? artConnection.May22shshiServicetestProject.project.may22shshiservicetest.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.keyStore
+  : ""
